@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "title": "HTML & CSS Basics",
+    "description": "Learn how to build and style modern web pages.",
+    "level": "Beginner",
+    "lessons": [
+      {"id": 101, "title": "Introduction to HTML", "content": "HTML gives structure to a web page using elements such as headings, paragraphs, links and images."},
+      {"id": 102, "title": "Forms and Inputs", "content": "Forms collect information from users with input, label, select and button elements."},
+      {"id": 103, "title": "CSS Fundamentals", "content": "CSS controls colors, spacing, fonts, layouts and responsive design."}
+    ]
+  },
+  {
+    "id": 2,
+    "title": "JavaScript Essentials",
+    "description": "Add logic and interactivity to websites.",
+    "level": "Beginner",
+    "lessons": [
+      {"id": 201, "title": "Variables and Data Types", "content": "JavaScript variables store values. Use let and const for modern JavaScript."},
+      {"id": 202, "title": "Functions", "content": "Functions group reusable instructions and can accept parameters and return values."},
+      {"id": 203, "title": "DOM Manipulation", "content": "The DOM lets JavaScript read and change HTML elements on a page."}
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Java Programming",
+    "description": "Understand Java syntax and object-oriented programming.",
+    "level": "Intermediate",
+    "lessons": [
+      {"id": 301, "title": "Java Basics", "content": "Java is a strongly typed object-oriented language that runs on the JVM."},
+      {"id": 302, "title": "Classes and Objects", "content": "Classes are blueprints, while objects are instances created from classes."},
+      {"id": 303, "title": "Inheritance and Polymorphism", "content": "Inheritance reuses code and polymorphism allows one interface to support many forms."}
+    ]
+  }
+]

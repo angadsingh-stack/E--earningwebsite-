@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LearnHub - E-learning Website</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <a class="brand" href="#home">LearnHub</a>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#courses">Courses</a>
+      <button id="authButton" class="outline-button">Login</button>
+      <button id="logoutButton" class="outline-button hidden">Logout</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div>
+        <p class="eyebrow">LEARN • PRACTICE • GROW</p>
+        <h1>Learn useful skills from anywhere.</h1>
+        <p class="hero-text">Study web development and programming through simple lessons. Track your progress as you learn.</p>
+        <a class="primary-button" href="#courses">Explore Courses</a>
+      </div>
+      <div class="hero-card">
+        <div class="code-line">&lt;h1&gt;Start Learning&lt;/h1&gt;</div>
+        <div class="code-line">const future = "bright";</div>
+        <div class="code-line">System.out.println("Grow");</div>
+      </div>
+    </section>
+
+    <section id="courses" class="section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">COURSE LIBRARY</p>
+          <h2>Choose a course</h2>
+        </div>
+        <p id="welcomeText">Create an account to save your lesson progress.</p>
+      </div>
+      <div id="courseGrid" class="course-grid"></div>
+    </section>
+
+    <section id="lessonSection" class="section hidden">
+      <button id="backButton" class="text-button">← Back to courses</button>
+      <div class="lesson-layout">
+        <aside>
+          <h3 id="courseTitle"></h3>
+          <div id="lessonList" class="lesson-list"></div>
+        </aside>
+        <article class="lesson-card">
+          <span id="lessonNumber" class="badge"></span>
+          <h2 id="lessonTitle"></h2>
+          <p id="lessonContent"></p>
+          <button id="completeButton" class="primary-button">Mark as Complete</button>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <div id="authModal" class="modal hidden">
+    <div class="modal-card">
+      <button id="closeModal" class="close-button">×</button>
+      <div class="tabs">
+        <button id="loginTab" class="tab active">Login</button>
+        <button id="registerTab" class="tab">Register</button>
+      </div>
+      <form id="authForm">
+        <div id="nameGroup" class="hidden">
+          <label for="name">Name</label>
+          <input id="name" type="text" placeholder="Your name" />
+        </div>
+        <label for="email">Email</label>
+        <input id="email" type="email" placeholder="you@example.com" required />
+        <label for="password">Password</label>
+        <input id="password" type="password" placeholder="Minimum 6 characters" required minlength="6" />
+        <button class="primary-button full" type="submit">Continue</button>
+        <p id="authMessage" class="message"></p>
+      </form>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
