@@ -38,7 +38,7 @@ async function api(url, options = {}) {
 }
 
 async function loadCourses() {
-  state.courses = await api('/api/courses''https://e-earningwebsite.onrender.com/' );
+  state.courses = await api('state.courses=await api(process.env.REACT\_APP\_API\_URL+'/api/courses';
   if (state.token) {
     try { state.progress = await api('/api/progress'); }
     catch { logout(); }
